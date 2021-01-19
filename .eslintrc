@@ -31,7 +31,8 @@
         "js": "never",
         "jsx": "never"
       }
-    ]
+    ],
+    "indent": "off"
   },
   "overrides": [
     {
@@ -54,7 +55,7 @@
         "@typescript-eslint/no-use-before-define": [1],
         "@typescript-eslint/quotes": [
           2,
-          "backtick",
+          "single",
           {
             "avoidEscape": true
           }
