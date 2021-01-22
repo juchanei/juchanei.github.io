@@ -2,7 +2,7 @@ import React from 'react';
 import { PageProps, graphql } from 'gatsby';
 
 import Layout from '@/components/Base/Layout';
-import Blog from '@/components/Article';
+import Article from '@/components/Article';
 
 interface ArticlePageProps extends PageProps {
     data: {
@@ -22,7 +22,7 @@ const ArticlePage: React.FC<ArticlePageProps> = ({ data }) => {
 
     return (
         <Layout>
-            <Blog
+            <Article
                 title={frontmatter.title}
                 date={frontmatter.date}
                 tags={frontmatter.tags}
