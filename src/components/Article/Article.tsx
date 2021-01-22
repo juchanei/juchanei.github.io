@@ -8,7 +8,7 @@ interface BlogProps {
 }
 
 // eslint-disable-next-line object-curly-newline
-const Blog: React.FC<BlogProps> = ({ title, date, tags, html }) => (
+const Article: React.FC<BlogProps> = ({ title, date, tags, html }) => (
     <div className="blog-post-container">
         <div className="blog-post">
             <h1>{title}</h1>
@@ -23,4 +23,4 @@ const Blog: React.FC<BlogProps> = ({ title, date, tags, html }) => (
     </div>
 );
 
-export default Blog;
+export default Article;

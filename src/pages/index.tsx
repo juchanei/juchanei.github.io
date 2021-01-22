@@ -1,1 +1,1 @@
-export { default } from '@/pages/blog';
+export { default } from '@/pages/articles';

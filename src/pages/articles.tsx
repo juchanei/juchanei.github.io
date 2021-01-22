@@ -3,7 +3,7 @@ import { PageProps, graphql, Link } from 'gatsby';
 
 import Layout from '@/components/Base/Layout';
 
-interface BlogProps extends PageProps {
+interface ArticlesPageProps extends PageProps {
     data: {
         allMarkdownRemark: {
             edges: [
@@ -22,7 +22,7 @@ interface BlogProps extends PageProps {
     };
 }
 
-const Blog: React.FC<BlogProps> = ({
+const ArticlesPage: React.FC<ArticlesPageProps> = ({
     data: {
         allMarkdownRemark: { edges },
     },
@@ -41,7 +41,7 @@ const Blog: React.FC<BlogProps> = ({
     </Layout>
 );
 
-export default Blog;
+export default ArticlesPage;
 
 export const pageQuery = graphql`
     query {

@@ -2,9 +2,9 @@ import React from 'react';
 import { PageProps, graphql } from 'gatsby';
 
 import Layout from '@/components/Base/Layout';
-import Blog from '@/components/Blog';
+import Blog from '@/components/Article';
 
-interface BlogProps extends PageProps {
+interface ArticlePageProps extends PageProps {
     data: {
         markdownRemark: {
             frontmatter: {
@@ -17,7 +17,7 @@ interface BlogProps extends PageProps {
     };
 }
 
-const BlogArticle: React.FC<BlogProps> = ({ data }) => {
+const ArticlePage: React.FC<ArticlePageProps> = ({ data }) => {
     const { frontmatter, html } = data.markdownRemark;
 
     return (
@@ -32,7 +32,7 @@ const BlogArticle: React.FC<BlogProps> = ({ data }) => {
     );
 };
 
-export default BlogArticle;
+export default ArticlePage;
 
 export const pageQuery = graphql`
     query($slug: String!) {

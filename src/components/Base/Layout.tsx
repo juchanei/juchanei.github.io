@@ -10,7 +10,7 @@ interface NavLinkOption {
 
 const links: NavLinkOption[] = [
     { path: '/about', name: 'About' },
-    { path: '/blog', name: 'Blog' },
+    { path: '/articles', name: 'Articles' },
     {
         path: 'https://github.com/juchanei',
         name: 'Github',

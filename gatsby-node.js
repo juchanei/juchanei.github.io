@@ -10,7 +10,7 @@ exports.onCreateWebpackConfig = ({ actions }) => {
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
     const { createPage } = actions;
-    const blogPostTemplate = require.resolve('./src/pages/blogArticle.tsx');
+    const blogPostTemplate = require.resolve('./src/pages/article.tsx');
     const result = await graphql(`
         {
             allMarkdownRemark(
