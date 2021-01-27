@@ -3,6 +3,8 @@ import styled from 'styled-components';
 
 import GithubLink from '@/components/Base/GithubLink';
 
+const LAYOUT_WIDTH = 800;
+
 interface NavLinkOption {
     path: string;
     name: string;
@@ -32,7 +34,7 @@ const Header = styled.header`
     display: flex;
     align-items: center;
     margin-bottom: 100px;
-    padding: 0 calc(50vw - 512px);
+    padding: 0 calc(50vw - ${LAYOUT_WIDTH / 2}px);
 `;
 
 const Navigator = styled.nav`
@@ -53,7 +55,7 @@ const Navigator = styled.nav`
 
 const Article = styled.article`
     margin-bottom: 100px;
-    padding: 0 calc(50vw - 512px);
+    padding: 0 calc(50vw - ${LAYOUT_WIDTH / 2}px);
 `;
 
 const Footer = styled.footer`
@@ -62,7 +64,7 @@ const Footer = styled.footer`
     justify-content: center;
     height: 200px;
     margin-top: auto;
-    padding: 0 calc(50vw - 512px);
+    padding: 0 calc(50vw - ${LAYOUT_WIDTH / 2}px);
     color: lightgray;
     font-size: smaller;
 
