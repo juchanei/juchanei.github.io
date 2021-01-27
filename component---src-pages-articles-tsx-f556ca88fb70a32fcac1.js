@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{"4FPD":function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),r=n.n(a),o=n("Wbzz"),d=n("EyRe");t.default=function(e){var t=e.data.allMarkdownRemark.edges;return r.a.createElement(d.a,null,t.filter((function(e){return!!e.node.frontmatter.date})).map((function(e){return r.a.createElement("div",{key:e.node.id},r.a.createElement(o.a,{to:e.node.frontmatter.slug},e.node.frontmatter.title," (",e.node.frontmatter.date,")"))})))}}}]);
+//# sourceMappingURL=component---src-pages-articles-tsx-f556ca88fb70a32fcac1.js.map

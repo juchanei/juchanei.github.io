@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{"2l/u":function(e,n,t){"use strict";t.r(n);var l=t("q1tI"),a=t.n(l),u=t("EyRe"),r=function(){return a.a.createElement(a.a.Fragment,null,a.a.createElement("p",null,"Hello!"))};n.default=function(){return a.a.createElement(u.a,null,a.a.createElement(r,null))}}}]);
+//# sourceMappingURL=component---src-pages-about-tsx-276987089428c846c8a7.js.map
