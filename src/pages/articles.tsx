@@ -33,8 +33,17 @@ const ArticlesPage: React.FC<ArticlesPageProps> = ({
             .map((edge) => (
                 <div key={edge.node.id}>
                     <Link to={edge.node.frontmatter.slug}>
-                        {edge.node.frontmatter.title} (
-                        {edge.node.frontmatter.date})
+                        <div style={{ display: 'flex' }}>
+                            {edge.node.frontmatter.title}
+                            <time
+                                style={{
+                                    marginLeft: 'auto',
+                                    fontSize: 'smaller',
+                                }}
+                            >
+                                {edge.node.frontmatter.date}
+                            </time>
+                        </div>
                     </Link>
                 </div>
             ))}
