@@ -12,8 +12,13 @@ const Article: React.FC<BlogProps> = ({ title, date, tags, html }) => (
     <div className="blog-post-container">
         <div className="blog-post">
             <h1>{title}</h1>
-            <h2>{date}</h2>
-            <h2>{tags.map((tag) => `#${tag}`).join(' ')}</h2>
+            <div style={{ display: 'flex' }}>
+                <time style={{ fontSize: 'smaller' }}>{date}</time>
+                <em style={{ marginLeft: 'auto', fontSize: 'smaller' }}>
+                    {tags.map((tag) => `#${tag}`).join(' ')}
+                </em>
+            </div>
+            <hr style={{ marginBottom: '50px' }} />
             <div
                 className="blog-post-content"
                 // eslint-disable-next-line react/no-danger
