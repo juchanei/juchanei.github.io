@@ -1,24 +1,24 @@
-import React from 'react';
-import { PageProps, graphql } from 'gatsby';
+import React from 'react'
+import { PageProps, graphql } from 'gatsby'
 
-import Layout from '@/components/Base/Layout';
-import Article from '@/components/Article';
+import Layout from '@/components/Base/Layout'
+import Article from '@/components/Article'
 
 interface ArticlePageProps extends PageProps {
     data: {
         markdownRemark: {
             frontmatter: {
-                title: string;
-                date: Date;
-                tags: string[];
-            };
-            html: string;
-        };
-    };
+                title: string
+                date: Date
+                tags: string[]
+            }
+            html: string
+        }
+    }
 }
 
 const ArticlePage: React.FC<ArticlePageProps> = ({ data }) => {
-    const { frontmatter, html } = data.markdownRemark;
+    const { frontmatter, html } = data.markdownRemark
 
     return (
         <Layout>
@@ -29,10 +29,10 @@ const ArticlePage: React.FC<ArticlePageProps> = ({ data }) => {
                 html={html}
             />
         </Layout>
-    );
-};
+    )
+}
 
-export default ArticlePage;
+export default ArticlePage
 
 export const pageQuery = graphql`
     query($slug: String!) {
@@ -46,4 +46,4 @@ export const pageQuery = graphql`
             }
         }
     }
-`;
+`

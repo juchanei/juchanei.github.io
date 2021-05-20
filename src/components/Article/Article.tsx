@@ -1,13 +1,12 @@
-import React from 'react';
+import React from 'react'
 
 interface BlogProps {
-    title: string;
-    date: Date;
-    tags: string[];
-    html: string;
+    title: string
+    date: Date
+    tags: string[]
+    html: string
 }
 
-// eslint-disable-next-line object-curly-newline
 const Article: React.FC<BlogProps> = ({ title, date, tags, html }) => (
     <div className="blog-post-container">
         <div className="blog-post">
@@ -26,6 +25,6 @@ const Article: React.FC<BlogProps> = ({ title, date, tags, html }) => (
             />
         </div>
     </div>
-);
+)
 
-export default Article;
+export default Article

@@ -59,7 +59,9 @@
           {
             "avoidEscape": true
           }
-        ]
+        ],
+        "semi": "off",
+        "object-curly-newline": "off"
       }
     }
   ],

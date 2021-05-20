@@ -1,7 +1,7 @@
-import React from 'react';
-import { PageProps, graphql, Link } from 'gatsby';
+import React from 'react'
+import { PageProps, graphql, Link } from 'gatsby'
 
-import Layout from '@/components/Base/Layout';
+import Layout from '@/components/Base/Layout'
 
 interface ArticlesPageProps extends PageProps {
     data: {
@@ -9,17 +9,17 @@ interface ArticlesPageProps extends PageProps {
             edges: [
                 {
                     node: {
-                        id: string;
+                        id: string
                         frontmatter: {
-                            slug: string;
-                            title: string;
-                            date: Date;
-                        };
-                    };
+                            slug: string
+                            title: string
+                            date: Date
+                        }
+                    }
                 },
-            ];
-        };
-    };
+            ]
+        }
+    }
 }
 
 const ArticlesPage: React.FC<ArticlesPageProps> = ({
@@ -48,9 +48,9 @@ const ArticlesPage: React.FC<ArticlesPageProps> = ({
                 </div>
             ))}
     </Layout>
-);
+)
 
-export default ArticlesPage;
+export default ArticlesPage
 
 export const pageQuery = graphql`
     query {
@@ -68,4 +68,4 @@ export const pageQuery = graphql`
             }
         }
     }
-`;
+`

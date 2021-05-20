@@ -1,14 +1,14 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 
-import GithubLink from '@/components/Base/GithubLink';
+import GithubLink from '@/components/Base/GithubLink'
 
-const LAYOUT_WIDTH = 800;
+const LAYOUT_WIDTH = 800
 
 interface NavLinkOption {
-    path: string;
-    name: string;
-    target?: string;
+    path: string
+    name: string
+    target?: string
 }
 
 const links: NavLinkOption[] = [
@@ -19,7 +19,7 @@ const links: NavLinkOption[] = [
         name: 'Github',
         target: 'blank',
     },
-];
+]
 
 const Main = styled.main`
     display: flex;
@@ -28,14 +28,14 @@ const Main = styled.main`
     min-height: 100vh;
     margin: 0;
     padding-left: auto;
-`;
+`
 
 const Header = styled.header`
     display: flex;
     align-items: center;
     margin-bottom: 100px;
     padding: 0 calc(50vw - ${LAYOUT_WIDTH / 2}px);
-`;
+`
 
 const Navigator = styled.nav`
     margin-left: auto;
@@ -51,12 +51,12 @@ const Navigator = styled.nav`
         margin: 0;
         list-style-type: none;
     }
-`;
+`
 
 const Article = styled.article`
     margin-bottom: 100px;
     padding: 0 calc(50vw - ${LAYOUT_WIDTH / 2}px);
-`;
+`
 
 const Footer = styled.footer`
     display: flex;
@@ -71,7 +71,7 @@ const Footer = styled.footer`
     & a {
         color: inherit;
     }
-`;
+`
 
 const Layout: React.FC = ({ children }) => (
     <Main>
@@ -94,6 +94,6 @@ const Layout: React.FC = ({ children }) => (
             <GithubLink githubId="juchanei" />
         </Footer>
     </Main>
-);
+)
 
-export default Layout;
+export default Layout
