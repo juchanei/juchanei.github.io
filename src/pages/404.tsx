@@ -1,10 +1,11 @@
 import React from 'react'
 import { PageProps } from 'gatsby'
+import Page from '@/pages/Page'
 
 const NotFound: React.FC<PageProps> = () => (
-    <main>
+    <Page title="404">
         <p>Sorry, page not found!</p>
-    </main>
+    </Page>
 )
 
 export default NotFound

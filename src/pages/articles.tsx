@@ -1,7 +1,6 @@
 import React from 'react'
 import { PageProps, graphql, Link } from 'gatsby'
-
-import Layout from '@/components/Base/Layout'
+import Page from '@/pages/Page'
 
 interface ArticlesPageProps extends PageProps {
     data: {
@@ -27,7 +26,7 @@ const ArticlesPage: React.FC<ArticlesPageProps> = ({
         allMarkdownRemark: { edges },
     },
 }) => (
-    <Layout>
+    <Page title="Articles">
         {edges
             .filter((edge) => !!edge.node.frontmatter.date)
             .map((edge) => (
@@ -47,7 +46,7 @@ const ArticlesPage: React.FC<ArticlesPageProps> = ({
                     </Link>
                 </div>
             ))}
-    </Layout>
+    </Page>
 )
 
 export default ArticlesPage

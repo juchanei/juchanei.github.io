@@ -1,7 +1,6 @@
 import React from 'react'
 import { PageProps, graphql } from 'gatsby'
-
-import Layout from '@/components/Base/Layout'
+import Page from '@/pages/Page'
 import Article from '@/components/Article'
 
 interface ArticlePageProps extends PageProps {
@@ -21,14 +20,14 @@ const ArticlePage: React.FC<ArticlePageProps> = ({ data }) => {
     const { frontmatter, html } = data.markdownRemark
 
     return (
-        <Layout>
+        <Page title={frontmatter.title}>
             <Article
                 title={frontmatter.title}
                 date={frontmatter.date}
                 tags={frontmatter.tags}
                 html={html}
             />
-        </Layout>
+        </Page>
     )
 }
 

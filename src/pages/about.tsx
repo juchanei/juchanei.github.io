@@ -1,13 +1,12 @@
 import React from 'react'
 import { PageProps } from 'gatsby'
-
-import Layout from '@/components/Base/Layout'
 import About from '@/components/About'
+import Page from '@/pages/Page'
 
 const AboutPage: React.FC<PageProps> = () => (
-    <Layout>
+    <Page title="About">
         <About />
-    </Layout>
+    </Page>
 )
 
 export default AboutPage
