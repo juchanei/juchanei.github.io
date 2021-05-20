@@ -32,7 +32,9 @@
         "jsx": "never"
       }
     ],
-    "indent": "off"
+    "indent": "off",
+    "semi": "off",
+    "object-curly-newline": "off"
   },
   "overrides": [
     {
@@ -59,9 +61,7 @@
           {
             "avoidEscape": true
           }
-        ],
-        "semi": "off",
-        "object-curly-newline": "off"
+        ]
       }
     }
   ],
