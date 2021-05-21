@@ -1,5 +1,5 @@
 import React from 'react'
-import Page from '@/pages/Page'
+import Page from '@/base/Page'
 
 const Home: React.FC = () => <Page />
 

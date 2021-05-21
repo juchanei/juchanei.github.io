@@ -1,6 +1,6 @@
 import React from 'react'
 import { PageProps, graphql } from 'gatsby'
-import Page from '@/pages/Page'
+import Page from '@/base/Page'
 import Article from '@/components/Article'
 
 interface ArticlePageProps extends PageProps {
