@@ -12,7 +12,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const { createPage } = actions
     const blogPostTemplate = require.resolve('./src/templates/article.tsx')
     const result = await graphql(`
-        {
+        query {
             allMarkdownRemark(
                 sort: { order: DESC, fields: [frontmatter___date] }
                 limit: 1000
