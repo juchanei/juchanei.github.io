@@ -1,11 +1,12 @@
 import React from 'react'
 import { PageProps } from 'gatsby'
+import About from '@/components/About/About'
 import Layout from '@/base/Layout'
 
-const NotFound: React.FC<PageProps> = () => (
+const AboutPage: React.FC<PageProps> = () => (
     <Layout title='' description=''>
-        <p>Sorry, page not found!</p>
+        <About />
     </Layout>
 )
 
-export default NotFound
+export default AboutPage
