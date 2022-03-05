@@ -27,6 +27,9 @@ jobs:
         uses: actions/setup-node@v2.3.0
         with:
           node-version: '16.x'
+
+      - name: Clone wiki repo
+        run: git clone https://github.com/juchanei/juchanei.github.io.wiki
       
       - name: Install dependencies
         run: npm ci
