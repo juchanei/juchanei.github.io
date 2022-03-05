@@ -53,7 +53,7 @@ const ArticlesPage: React.FC<ArticlesPageProps> = ({
         .filter(edge => !!edge.node.frontmatter.date)
         .map(edge => ({
             id: edge.node.id,
-            slug: edge.node.fields.slug,
+            path: `/articles${edge.node.fields.slug}`,
             date: edge.node.frontmatter.date,
             title: edge.node.frontmatter.title,
         }))

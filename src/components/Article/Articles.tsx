@@ -6,7 +6,7 @@ interface ArticlesProps {
     articles: Array<{
         id: string
         date: Date
-        slug: string
+        path: string
         title: string
     }>
 }
@@ -40,7 +40,7 @@ const Articles: React.FC<ArticlesProps> = ({ articles }) => (
     <ArticleLinks>
         {articles.map(article => (
             <ArticleLink key={article.id}>
-                <Link to={article.slug}>{article.title}</Link>
+                <Link to={article.path}>{article.title}</Link>
                 <time>{article.date}</time>
             </ArticleLink>
         ))}
