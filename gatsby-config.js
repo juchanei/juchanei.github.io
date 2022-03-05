@@ -6,7 +6,7 @@ module.exports = {
             resolve: 'gatsby-source-filesystem',
             options: {
                 name: 'markdown-pages',
-                path: `${__dirname}/contents`,
+                path: `${__dirname}/juchanei.github.io.wiki`,
             },
         },
         {
@@ -23,7 +23,7 @@ module.exports = {
                     {
                         resolve: 'gatsby-remark-relative-images',
                         options: {
-                            staticFolderName: `${__dirname}/contents`,
+                            staticFolderName: `${__dirname}/juchanei.github.io.wiki`,
                         },
                     },
                     {
