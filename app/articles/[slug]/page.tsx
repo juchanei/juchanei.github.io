@@ -14,5 +14,5 @@ export default function Article({ params }: { params: ArticleParams }) {
 }
 
 export async function generateStaticParams() {
-    return getArticleSlugs().map((slug) => ({ slug }))
+    return getArticleSlugs().map(slug => ({ slug }))
 }

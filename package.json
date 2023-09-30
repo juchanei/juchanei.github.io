@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && touch ./out/.nojekyll",
     "start": "next start",
     "lint": "next lint",
     "clone-wiki": "git clone --depth=1 https://github.com/juchanei/juchanei.github.io.wiki",
@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@types/node": "20.1.4",
+    "@types/marked": "^4.3.2",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
     "autoprefixer": "10.4.14",
@@ -26,8 +27,5 @@
     "react-dom": "18.2.0",
     "tailwindcss": "3.3.2",
     "typescript": "5.0.4"
-  },
-  "devDependencies": {
-    "@types/marked": "^4.3.0"
   }
 }
