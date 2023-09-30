@@ -1,0 +1,24 @@
+.links {
+    display: block;
+    padding: 0;
+    list-style-type: none;
+}
+
+.links>li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.links>li>a {
+    width: 500px;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right: auto;
+}
+
+.links>li>time {
+    font-size: smaller;
+}

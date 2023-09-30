@@ -1,0 +1,81 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-display: block;
+    color: #054040;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+em,
+time {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-display: block;
+}
+
+article {
+    font-family: 'Noto Serif KR', serif;
+    font-display: block;
+    line-height: 180%;
+}
+
+a {
+    color: inherit;
+}
+
+pre {
+    background-color: #fcfffc;
+    padding: 1em;
+}
+
+@media (prefers-color-scheme: dark) {
+
+    html,
+    body {
+        color: #fcfffc;
+        background-color: #181818;
+    }
+}

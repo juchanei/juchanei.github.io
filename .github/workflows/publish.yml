@@ -1,0 +1,36 @@
+name: Publish to Github Pages
+
+on:
+  push:
+    branches: [ master ]
+  gollum:
+  workflow_dispatch:
+
+jobs:
+  Publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+          
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+
+      - name: Clone wiki repo
+        run: git clone --depth=1 https://github.com/juchanei/juchanei.github.io.wiki
+      
+      - name: Install dependencies
+        run: npm ci --only=production
+        
+      - name: Build
+        run: npm run build
+        
+      - name: Publish
+        uses: crazy-max/ghaction-github-pages@v2.5.0
+        with:
+          target_branch: gh-pages
+          build_dir: public
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
