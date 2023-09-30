@@ -11,12 +11,7 @@ export default function Article({ title, date, tags, html }: { title: string, da
     return (
         <>
             <h1>{title}</h1>
-            <div className={styles['title-subs']}>
-                <div className={styles['tag-list']}>
-                    {tags && tags.map((tag: string) => <em key={tag}>#{tag}</em>)}
-                </div>
-                <time>{formatDate(date)}</time>
-            </div>
+            <time>{formatDate(date)}</time>
             <hr className={styles.bar} />
             <div
                 className={styles['blog-post-content']}
