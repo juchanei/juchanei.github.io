@@ -43,22 +43,11 @@ body {
     color: #054040;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-a,
-em,
-time {
-    font-family: 'Noto Sans KR', sans-serif;
-    font-display: block;
+h1 {
+    margin-top: 60px;
 }
 
 article {
-    font-family: 'Noto Serif KR', serif;
-    font-display: block;
     line-height: 180%;
 }
 
@@ -72,7 +61,6 @@ pre {
 }
 
 @media (prefers-color-scheme: dark) {
-
     html,
     body {
         color: #fcfffc;
